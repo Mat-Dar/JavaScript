@@ -1,0 +1,72 @@
+<html> 
+<head> 
+    <title>Lena Gadomska 3F1</title> 
+
+    <script>
+        document.write('<font color="red" size="5">Wykonała: Lena Gadomska, mój numer w dzienniku to 5, czyli mam układ [(5) mod 4=1] → układ 1</font><br><br>');
+    </script>
+
+    <script type="text/javascript"> 
+        function WinOpen_gadomska_1() { 
+            let okno = window.open("", "okno1","toolbar=no,directories=no,menubar=no,height=400,width=300,top=400,left=400"); 
+            okno.document.write(`
+                <h3>Historyjka – część 1</h3>
+                <img src="grafika1.png"><br><br>
+                <button onclick="window.close()">zamknij okno</button>
+            `);
+        } 
+
+        function WinOpen_gadomska_2() { 
+            let okno = window.open("", "okno2","toolbar=no,directories=no,menubar=no,height=400,width=300,top=400,left=700"); 
+            okno.document.write(`
+                <h3>Historyjka – część 2</h3>
+                <img src="grafika2.png"><br><br>
+                <button onclick="window.close()">zamknij okno</button>
+            `);
+        } 
+
+        function WinOpen_gadomska_3() { 
+            let okno = window.open("", "okno3","toolbar=no,directories=no,menubar=no,height=400,width=300,top=400,left=1000"); 
+            okno.document.write(`
+                <h3>Historyjka – część 3</h3>
+                <img src="grafika3.png"><br><br>
+                <button onclick="window.close()">zamknij okno</button>
+            `);
+        } 
+
+        function WinOpen_gadomska_4() { 
+            let okno = window.open("", "okno4","toolbar=no,directories=no,menubar=no,height=400,width=300,top=400,left=1300"); 
+            okno.document.write(`
+                <h3>Historyjka – część 4</h3>
+                <img src="grafika4.png"><br><br>
+                <button onclick="window.close()">zamknij okno</button>
+            `);
+        } 
+
+        function okno_zamknij_gadomska() {
+            window.close();
+        }
+
+        function pokaz_wszystkie_grafiki() {
+            WinOpen_gadomska_1();
+            WinOpen_gadomska_2();
+            WinOpen_gadomska_3();
+            WinOpen_gadomska_4();
+        }
+    </script> 
+</head> 
+
+<body> 
+    <form> 
+        <input type="button" value="Grafika1" onclick="WinOpen_gadomska_1()"> 
+        <input type="button" value="Grafika2" onclick="WinOpen_gadomska_2()"> 
+        <input type="button" value="Grafika3" onclick="WinOpen_gadomska_3()"> 
+        <input type="button" value="Grafika4" onclick="WinOpen_gadomska_4()"> 
+    </form> 
+
+    <br>
+
+    <button onclick="okno_zamknij_gadomska()">Zamknij okno</button> 
+    <button onclick="pokaz_wszystkie_grafiki()">Cofnij okno</button> 
+</body> 
+</html>
