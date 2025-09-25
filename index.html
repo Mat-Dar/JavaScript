@@ -5,7 +5,15 @@
  document.write('<font color="red" size="76px">Szkielet zaliczeniowy JavaScript Mateusz Dargacz klasa 3G1 </font><br>');
           </SCRIPT>
           <script language="JavaScript"> 
-             function WinOpen_zad3()  
+function WinOpen_zad1  
+               { 
+window.open("js/zad1/zadanie1_darg.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
+               } 
+function WinOpen_zad2()  
+               { 
+window.open("js/zad2/zadanie2_darg.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
+               } 
+function WinOpen_zad3()  
                { 
 window.open("js/zad3/zadanie3_darg.html","okienko","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200"); 
                } 
@@ -25,6 +33,8 @@ function okno_zamknij()
       </head> 
 <body> 
    <form> 
+     <input type="button" name="zadanie1" value="zadanie1_darg" onclick="WinOpen_zad1(' ')"> 
+     <input type="button" name="zadanie2" value="zadanie2_darg" onclick="WinOpen_zad2(' ')"> 
      <input type="button" name="zadanie3" value="zadanie3_darg" onclick="WinOpen_zad3(' ')"> 
      <input type="button" name="zadanie4" value="zadanie4_darg" onclick="WinOpen_zad4(' ')"> 
      <input type="button" name="zadanie5" value="zadanie5_darg" onclick="WinOpen_zad5(' ')"> 
@@ -33,6 +43,7 @@ function okno_zamknij()
 </body> 
 
 </html>
+
 
 
 
