@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<head> 
+<title> proste obliczenia sekund </title> 
+<meta charset="utf-8"> 
+</head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+var D1_gad=prompt("D1=","");
+var D2_gad=prompt("D2=","");
+var suma;
+var D1=parseFloat(D1_gad);
+var D2=parseFloat(D2_gad);
+if (D2 >= D1) {
+    alert("D2 nie może być większe lub równe D1");
+}
+if (D1 <= 1 || D1 >= 31 || D2 <= 1 || D2 >= 31) {
+    alert("Podaj dni z zakresu 1–31!");
+}
+suma = (D2 - D1) * 86400;
+document.write("D1 = " + D1 + "<br>D2 = " + D2 + "<br>Ilość sekund = " + suma + "<br>");
+</script>
+</div>
+</body>
+</html>
