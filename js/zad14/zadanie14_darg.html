@@ -4,29 +4,23 @@
 <meta charset="UTF-8">
 <title>Dargacz - Zadanie 14</title>
 </head>
-<body>
-<div style="color:green; font-size:28px;">
-<script language="JavaScript">
-
-
-    var m_dar = parseInt(prompt("Podaj m:", ""));
-
-    var ulamek1 = 1 / (m_dar + 1);
-    var ulamek2 = 1 / (m_dar * (m_dar + 1));
-    var a = m_dar * (m_dar + 1);
-    var ulamek2a = 1 / (a + 1);
-    var ulamek2b = 1 / (a * (a + 1));
+<body style="font-size:22px; color:green;">
+<script>
+    
+var m_dar = parseInt(prompt("Podaj wartość m:", ""));
+if (isNaN(m_dar) || m_dar <= 1) {
+    document.write("Błąd! Podaj liczbę (nie 1)");
+    
+} else {
+    var a = m_dar + 2;
+    var b = (m_dar + 1) * (m_dar + 2);
+    var c = m_dar * (m_dar + 1);
+    document.write("<h2>Rozkład ułamka egipskiego</h2>");
     document.write("Dla m = " + m_dar + "<br>");
-    document.write("1/" + m_dar + " = 1/" + (m_dar + 1) + " + 1/" + (a + 1) + " + 1/" + (a * (a + 1)) + "<br><br>");
-
-
-    var suma = (1 / (m_dar + 1)) + (1 / (a + 1)) + (1 / (a * (a + 1)));
-    document.write("1/" + m_dar + " = " + (1 / m_dar).toFixed(5) + "<br>");
-    document.write("1/" + (m_dar + 1) + " = " + (1 / (m_dar + 1)).toFixed(5) + "<br>");
-    document.write("1/" + (a + 1) + " = " + ulamek2a.toFixed(5) + "<br>");
-    document.write("1/" + (a * (a + 1)) + " = " + ulamek2b.toFixed(5) + "<br>");
-    document.write("<br>" + suma.toFixed(5) + " ≈ " + (1 / m_dar).toFixed(5));
+    document.write("<b>1/" + m_dar + " = 1/" + a + " + 1/" + b + " + 1/" + c + "</b><br><br>");
+    var suma = (1 / a) + (1 / b) + (1 / c);
+    document.write("Sprawdzenie: " + suma.toFixed(6) + " = " + (1 / m_dar).toFixed(6));
+}
 </script>
-</div>
- </body>
-</html> 
+</body>
+</html>
