@@ -1,22 +1,32 @@
-<html>
-  <body>
-    <div style="color: green;font-size: 50px;">
-        <script> language="JavaScript">
-            var m=prompt ("m=","");
-            var b;
-            var c;
-            var d;
-            var a=parseFloat(m_bie);
-            b=a+2
-            c=(a+1)*(a+2);
-            d=a*(a+1);
-            document.write("1/"+a+" = 1/"+b+" +1/"+c+" + 1/"+d+"<br>")
-                          function okno_zamknij_dargacz()
-            {
-              window.close
-            }
-        </script>
-      </div>
-      <imput type="button" value="zamknij okno" onclick="okno_zamknij_dargacz()"/>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dargacz - Zadanie 14</title>
+</head>
+<body>
+<div style="color:green; font-size:28px;">
+<script language="JavaScript">
+
+
+    var m_dar = parseInt(prompt("Podaj m:", ""));
+
+    var ulamek1 = 1 / (m_dar + 1);
+    var ulamek2 = 1 / (m_dar * (m_dar + 1));
+    var a = m_dar * (m_dar + 1);
+    var ulamek2a = 1 / (a + 1);
+    var ulamek2b = 1 / (a * (a + 1));
+    document.write("Dla m = " + m_dar + "<br>");
+    document.write("1/" + m_dar + " = 1/" + (m_dar + 1) + " + 1/" + (a + 1) + " + 1/" + (a * (a + 1)) + "<br><br>");
+
+
+    var suma = (1 / (m_dar + 1)) + (1 / (a + 1)) + (1 / (a * (a + 1)));
+    document.write("1/" + m_dar + " = " + (1 / m_dar).toFixed(5) + "<br>");
+    document.write("1/" + (m_dar + 1) + " = " + (1 / (m_dar + 1)).toFixed(5) + "<br>");
+    document.write("1/" + (a + 1) + " = " + ulamek2a.toFixed(5) + "<br>");
+    document.write("1/" + (a * (a + 1)) + " = " + ulamek2b.toFixed(5) + "<br>");
+    document.write("<br>" + suma.toFixed(5) + " ≈ " + (1 / m_dar).toFixed(5));
+</script>
+</div>
+ </body>
+</html> 
