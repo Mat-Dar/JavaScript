@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dargacz - Zadanie 12</title>
+</head>
+<body>
+<div style="color:green; font-size:50px;">
+<script language="JavaScript">
+    // Zadanie 12 – Ile sekund (Gadomska)
+ 
+    var D1_dar = parseInt(prompt("Podaj pierwszy dzień stycznia:", ""));
+    var G1_dar = parseInt(prompt("Podaj godzinę w tym dniu:", ""));
+    var D2_dar = parseInt(prompt("Podaj drugi dzień stycznia:", ""));
+    var G2_dar = parseInt(prompt("Podaj godzinę w tym dniu:", ""));
+    // Obliczenia
+    var sekundy_na_dobe = 24 * 3600;
+    var sekundy_D1 = (D1_dar - 1) * sekundy_na_dobe + G1_dar * 3600;
+    var sekundy_D2 = (D2_dar - 1) * sekundy_na_dobe + G2_dar * 3600;
+    var roznica = sekundy_D1 - sekundy_D2;
+ 
+    document.write("Między dniem " + D1_dar + " godz. " + G1_dar + " a dniem " + D2_dar + " godz. " + G2_dar + "<br>");
+    document.write("Upłynęło " + roznica + " sekund.");
+</script>
+</div>
+</body>
+</html>
+  </textarea>
+</body>
+</html>
