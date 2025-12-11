@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script language="JavaScript">
+        var x1_dar = parseFloat(prompt("x1_dar=","")); 
+        var x2_dar = parseFloat(prompt("x2_dar=","")); 
+        
+        var rad_x1_dar = (x1_dar*Math.PI)/180;
+        document.write("x1 = " + x1_dar + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "x2 = " + x2_dar + "<br>");
+        document.write("x1 = " + x1_dar + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "x1 = " + rad_x1_dar.toFixed(2) + "<br>");
+
+        var y1_dar = 3*Math.pow(x1_dar, 2/3);
+        document.write("y1 = " + y1_dar.toFixed(2) + "<br>");
+
+        var y2_dar = 2*Math.cos(rad_x1_dar) + 3*Math.sin(rad_x1_dar);
+        document.write("y2 = " + y2_dar.toFixed(2) + "<br>");
+
+        var akuku = Math.pow(x1_dar,5) + 2*Math.pow(x2_dar, 4);
+        var y3_dar = Math.pow(akuku, 1/3)*Math.abs(x1_dar-x2_dar);
+        document.write("y3 = " + y3_dar.toFixed(2) + "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
