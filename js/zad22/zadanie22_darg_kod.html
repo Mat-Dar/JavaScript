@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<html>
+<head>
+<title>Zadanie 22</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+
+function Pole_dar(a_dar, b_dar) {
+  a_dar = parseFloat(a_dar);
+  b_dar = parseFloat(b_dar);
+  var pole_wynik = a_dar * b_dar;
+
+  document.getElementsByName('pole')[0].value = pole_wynik.toFixed(2);
+  alert("Pole = " + pole_wynik.toFixed(2) + " cm^2");
+  wyprowadz_pole_dar.innerHTML = "Pole = " + pole_wynik.toFixed(2) + " cm^2";
+}
+
+function obwod_dar(a_dar, b_dar) {
+  a_dar = parseFloat(a_dar);
+  b_dar = parseFloat(b_dar);
+  var obwod_wynik = 2 * a_dar + 2 * b_dar;
+
+  document.getElementsByName('obw')[0].value = obwod_wynik.toFixed(2);
+  alert("Obwód = " + obwod_wynik.toFixed(2) + " cm");
+  wyprowadz_obwod_dar.innerHTML = "Obwód = " + obwod_wynik.toFixed(2) + " cm";
+}
+
+function okno_zamknij_dar() {
+  window.close();
+}
+
+</script>
+</head>
+<body>
+<h3>Obliczanie pola oraz obwodu prostokąta</h3>
+
+<form name="formularz" action="..." 
+      onsubmit="Pole_dar(this.a_dana_dar.value,this.b_dana_dar.value);
+                obwod_dar(this.a_dana_dar.value,this.b_dana_dar.value);
+                return false">
+
+Podaj a = <input size="6" name="a_dana_dar">
+Podaj b = <input size="6" name="b_dana_dar">
+<br><br>
+
+<input type="submit" value="Oblicz">
+<br><br>
+
+Pole = <input size="6" name="pole">
+Obwód = <input size="6" name="obw">
+</form>
+
+<table>
+<tr id="wyprowadz_pole_dar"></tr>
+<tr id="wyprowadz_obwod_dar"></tr>
+</table>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_dar()"/>
+</body>
+</html>
+  </textarea>
+</body>
+</html>
