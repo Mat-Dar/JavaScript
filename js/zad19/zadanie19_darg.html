@@ -1,0 +1,26 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8">
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_dar() 
+   { 
+ var a_dar= parseFloat(document.getElementById('dlugosc').value); 
+ var b_dar= a_dar*a_dar; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_dar.toFixed(2)+" cm^2";  
+   } 
+  function obwod_dar() 
+   { 
+ var a_dar= parseFloat(document.getElementById('dlugosc').value); 
+ var b_dar= 4*a_dar; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_dar.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_dar()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_dar()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 

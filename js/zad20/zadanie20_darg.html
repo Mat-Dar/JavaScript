@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 20 - Dargacz</title>
+</head>
+<body>
+  <div class="container">
+    <p>Wczytaj współrzędne trzech punktów trójkąta:</p>
+ 
+    <p>
+      A(xa_dar, ya_dar):
+      <input type="number" id="xa_dar" placeholder="xa">
+      <input type="number" id="ya_dar" placeholder="ya">
+    </p>
+    <p>
+      B(xb_dar, yb_dar):
+      <input type="number" id="xb_dar" placeholder="xb">
+      <input type="number" id="yb_dar" placeholder="yb">
+    </p>
+    <p>
+      C(xc_dar, yc_dar):
+      <input type="number" id="xc_dar" placeholder="xc">
+      <input type="number" id="yc_dar" placeholder="yc">
+    </p>
+ 
+    <button onclick="oblicz()">Oblicz długości boków</button>
+ 
+    <div id="wynik"></div>
+  </div>
+ 
+  <script>
+    function AB_kry(xa_dar, ya_dar, xb_dar, yb_dar) {
+      return Math.sqrt(Math.pow(xb_dar - xa_dar, 2) + Math.pow(yb_dar - ya_dar, 2));
+    }
+ 
+    function BC_kry(xb_dar, yb_dar, xc_dar, yc_dar) {
+      return Math.sqrt(Math.pow(xc_dar - xb_dar, 2) + Math.pow(yc_dar - yb_dar, 2));
+    }
+ 
+    function AC_kry(xa_dar, ya_dar, xc_dar, yc_dar) {
+      return Math.sqrt(Math.pow(xc_dar - xa_dar, 2) + Math.pow(yc_dar - ya_dar, 2));
+    }
+ 
+    function oblicz() {
+      var xa_dar = parseFloat(document.getElementById("xa_dar").value);
+      var ya_dar = parseFloat(document.getElementById("ya_dar").value);
+      var xb_dar = parseFloat(document.getElementById("xb_dar").value);
+      var yb_dar = parseFloat(document.getElementById("yb_dar").value);
+      var xc_dar = parseFloat(document.getElementById("xc_dar").value);
+      var yc_dar = parseFloat(document.getElementById("yc_dar").value);
+ 
+      if (isNaN(xa_dar) || isNaN(ya_dar) || isNaN(xb_dar) || isNaN(yb_dar) || isNaN(xc_dar) || isNaN(yc_dar)) {
+        document.getElementById("wynik").innerHTML = "Proszę wprowadzić wszystkie współrzędne liczbowe";
+        return;
+      }
+ 
+      var ab = AB_kry(xa_dar, ya_dar, xb_dar, yb_dar);
+      var bc = BC_kry(xb_dar, yb_dar, xc_dar, yc_dar);
+      var ac = AC_kry(xa_dar, ya_dar, xc_dar, yc_dar);
+ 
+      document.getElementById("wynik").innerHTML = `
+        Długości boków trójkąta:<br>
+        AB = ${ab.toFixed(2)}<br>
+        BC = ${bc.toFixed(2)}<br>
+        AC = ${ac.toFixed(2)}
+      `;
+    }
+  </script>
+</body>
+</html>
