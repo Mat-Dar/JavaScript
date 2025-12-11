@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Kowalewski 3G</title>
+    <title>Dargacz 3G</title>
 </head>
 
 <style>
@@ -23,7 +23,7 @@
 </style>
 
 <script>
-    function okno_zamknij_kowalewski(){
+    function okno_zamknij_dargacz(){
         window.close()
     }
 </script>
@@ -46,26 +46,13 @@
 
 
     <span id="pyt">3) Omów metody getElementsByName, getElementById, getElementByTagName (może być w postaci tabeli)</span><br>
-    <table id="odp3">
-        <tr>
-            <th>Metoda</th>
-            <th>Opis</th>
-        </tr>
+        <ol style="list-style-type: disc;">
+        <li class="odp"><b>getElementById("id")</b>: dostęp do wszystkich elementów o konkretnej wartości atrybutu id</li>
+        <li class="odp"><b>getElementByTagName("znacznik")</b>: dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</li>
+        <li class="odp"><b>getElementByName("nazwa")</b>: dostęp do wszystkich elementów o konkretnej wartości atrybutu</li>
+    </ol>
 
-        <tr>
-            <td>getElementById("id")</td>
-            <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
-        </tr>
         
-        <tr>
-            <td>getElementByTagName("znacznik")</td>
-            <td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
-        </tr>
-        
-        <tr>
-            <td>getElementByName("nazwa")</td>
-            <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
-        </tr>
     </table><br>
 
     <span id="pyt">4) Omów właściwości innerHTML innerText className. (każdą osobno)</span><br>
@@ -77,4 +64,5 @@
 
     <input type="button" value="zamknij okno" onclick="okno_zamknij_kowalewski()"/>
     </body>
+
 </html>
