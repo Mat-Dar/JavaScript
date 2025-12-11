@@ -6,13 +6,26 @@
 <body> 
 <div style="color:navy;font-size:50px;"> 
 <script language="JavaScript"> 
-var a_gad=parseFloat(prompt("a=","")); 
-var b_gad=parseFloat(prompt("b=","")); 
-function suma_gad(a_gad, b_gad) { 
-return a_gad + b_gad; 
+var a_dar=parseFloat(prompt("a=","")); 
+var b_dar=parseFloat(prompt("b=","")); 
+function suma_dar(a_dar, b_dar) { 
+return a_dar + b_dar; 
+}  
+function odejmowanie_dar(a_dar, b_dar) { 
+return a_dar - b_dar; 
 } 
-document.write("suma="+suma_gad(a_gad,b_gad)+"<br>"); 
-</script> 
-</div> 
+function od_kwadratu_dar(a_dar, b_dar) { 
+return Math.pow(a_dar, b_dar); 
+} 
+function reszta_z_dzielenia_kow(a_dar, b_dar) { 
+return a_dar % b_dar; 
+} 
+        
+        document.write("suma="+suma_kow(a_dar,b_dar)+"<br>"); 
+        document.write("roznica="+odejmowanie_kow(a_dar,b_dar)+"<br>"); 
+        document.write("kwadrat="+od_kwadratu_kow(a_dar,b_dar)+"<br>"); 
+        document.write("reszta z dzielenia="+reszta_z_dzielenia_kow(a_dar,b_dar)+"<br>"); 
+        </script> 
+    </div> 
 </body> 
 </html> 
