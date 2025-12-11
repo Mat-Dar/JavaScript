@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<html>
+<head>
+    <script language="JavaScript">
+    function drabina_Dargacz(){
+        var d_dar = parseFloat(document.getElementsByName('d')[0].value);
+        var x_dar = parseFloat(document.getElementsByName('x')[0].value);
+
+        drabina_dar = Math.sqrt(Math.pow(d_dar, 2) + Math.pow(x_dar, 2));
+
+        alert("Drabina = " + drabina_dar.toFixed(2) + " cm");
+        document.getElementsByName('drabina')[0].value = drabina_dar.toFixed(2);
+    }
+
+    function alfa_Dargacz(){
+        var d_dar = parseFloat(document.getElementsByName('d')[0].value);
+        var x_dar = parseFloat(document.getElementsByName('x')[0].value);
+
+        var sin_alfa_dar = d_dar/drabina_dar;
+        var alfa_dar = (Math.asin(sin_alfa_dar)) * 180 / Math.PI;
+
+        alert("Alfa = " + alfa_dar.toFixed(2));
+        document.getElementsByName('alfa')[0].value = alfa_dar.toFixed(2);
+    }
+    </script>
+</head>
+<body>
+    <form name="formularz" onsubmit="drabina_Dargacz(); alfa_Dargacz(); return false">
+            Podaj d=
+        <input size="6" name="d" id="input_d">
+            Podaj x=
+        <input size="6" name="x" id="input_x"><br><br>
+        <input TYPE="submit" Value="oblicz"><br><br>
+            Drabina=
+        <input size="6" name="drabina"><br>
+            Alfa=
+        <input size="6" name="alfa">
+    </form>
+</body>
+</html>
+</textarea>
+</body>
+</html>
