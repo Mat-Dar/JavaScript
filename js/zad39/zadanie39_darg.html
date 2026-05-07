@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Daracz Z39</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html>
+<body>
+    <b><font color="green" size="7">MENU</font><br><br><br><br>
+    <font color="red" size="6">1-CZERWONY</font><br><br>
+    <font color="blue" size="6">2-NIEBIESKI</font><br><br></b>
+
+
+    <input type="button" name="dargacz" value="Oblicz" onclick="fun_dar()" />
+    <script>
+        function fun_dar() {
+            var x_dar = prompt("Podaj kolor", "");
+            if(x_dar == 1 || x_dar.toLowerCase() == "czerwony") {
+                document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br/>');
+            }
+            else if(x_dar == 2 || x_dar.toLowerCase() == "niebieski") {
+                document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br/>');
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- Dargacz Z39 -->
