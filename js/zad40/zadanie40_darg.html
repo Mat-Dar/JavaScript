@@ -11,17 +11,17 @@
         document.write("wykonał Mateusz Dargacz <br>");
         document.write("czytany argument x="+x_dar+"<br>");
         function f_kow(x_dar) {
-            if(x_dar>=2) {
-                return 9;
+        if(x_dar>=2) {
+            return 9;
             }
-            if((x_dar>-2)&&(x_dar<0)) {
-                return Math.pow(x_dar+1, 2);
+        if((x_dar>-2)&&(x_dar<0)) {
+            return Math.pow(x_dar+1, 2);
             }
-            if((x_dar>=0)&&(x_dar<2)) {
-                return Math.pow(x_dar, 3) + 1;
+        if((x_dar>=0)&&(x_dar<2)) {
+            return Math.pow(x_dar, 3) + 1;
             }
-            if (x_dar<-2){
-                return 1;
+        if (x_dar<-2){
+            return 1;
             }
         }
         document.write("f(" + x + ")="+f_dar(x_dar)+"<br>");
