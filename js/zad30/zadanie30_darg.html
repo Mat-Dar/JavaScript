@@ -1,32 +1,25 @@
 <html> 
-  <head> 
-    <script type="text/javascript"> 
-      var pudelko = 
-      {
-        kolor: 'Czerwony', 
-	pochodzenie: 'Czechy',
-        tworca: 'Andrzej', 
-        pokaz: function () 
-        { 
-          document.write(this.kolor + ' pudelko stworzone w ' + this.pochodzenie + ' przez ' + this.tworca) 
-        } 
-      } 
-      pudelko.pokaz(); 
-      pudelko.rok=2000; 
-      pudelko.wyswietl_dargacz=function() {alert('z roku ' + this.rok)} 
-      pudelko.wyswietl_dargacz(); 
-    </script> 
-  </head> 
-  <body> 
-    <br> 
-    Programowanie obiektowe. <br> 
-    Obiekt  to  pudełko<br> 
-    Pola:<br> 
-    kolor<br> 
-    tworca<br> 
-    pochodzenie<br> 
-    metoda:  pokaz<br> 
-    nowe pole to rok <br> 
-    nowa metoda: wyswietl_dargacz();<br> 
-  </body> 
+     <head> 
+           <script type="text/javascript"> 
+                 var pudelko = { 
+                       kolor: 'Czerwony', 
+					   pochodzenie: 'Czechy', 
+                       tworca: 'Andrzej', 
+                       pokaz: function () { 
+                            document.write(this.kolor + ' pudelko stworzone w ' + this.pochodzenie + ' przez ' + this.tworca) 
+                       } 
+                 } 
+  pudelko.pokaz(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   Programowanie obiektowe. <br> 
+     Obiekt  to  pudelko<br> 
+     Pola:<br> 
+     Kolor<br> 
+     Twórca<br> 
+     Pochodzenie<br> 
+     metoda:  pokaz<br> 
+</body> 
 </html> 
