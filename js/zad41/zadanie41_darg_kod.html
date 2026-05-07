@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Dargacz Z41</title>
+<meta charset="utf-8">
+<style>
+h1 { text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<h1>Proste działania</h1>
+
+<div style="color:green; font-size:20px;">
+Mateusz Dargacz klasa 3G1
+</div>
+<br>
+
+<label for="a">Podaj pierwszą liczbę:</label> 
+<input type="number" id="a">
+<br><br>
+
+<label for="b">Podaj drugą liczbę:</label> 
+<input type="number" id="b">
+<br><br>
+
+<input type="button" value="DODAWANIE" onclick="suma_dar()">
+<input type="button" value="ODEJMOWANIE" onclick="roznica_dar()">
+<input type="button" value="MNOŻENIE" onclick="iloczyn_dar()">
+<input type="button" value="DZIELENIE" onclick="iloraz_dar()">
+<input type="button" value="TEORIA" onclick="teoria_dar()">
+
+<div id="wynik" style="margin-top:20px; font-size:22px;"></div>
+
+<script>
+
+function suma_dar() {
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+
+    if(a=="" || b=="") {
+        document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+    } else {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        var suma = a + b;
+        document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma.toFixed(2);
+    }
+}
+
+function roznica_dar() {
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+
+    if(a=="" || b=="") {
+        document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+    } else {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        var roznica = a - b;
+        document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica.toFixed(2);
+    }
+}
+
+function iloczyn_dar() {
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+
+    if(a=="" || b=="") {
+        document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+    } else {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        var iloczyn = a * b;
+        document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn.toFixed(2);
+    }
+}
+
+function iloraz_dar() {
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+
+    if(a=="" || b=="") {
+        document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+    } else {
+        a = parseFloat(a);
+        b = parseFloat(b);
+
+        if(b == 0) {
+            document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+        } else {
+            var iloraz = a / b;
+            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz.toFixed(2);
+        }
+    }
+}
+
+function teoria_dar() {
+    document.write("<font color=green size=4>Pierwsza linia teorii</font><br>");
+    document.write("<font color=red size=4>&lt;label for=&quot;a&quot;&gt;Podaj pierwszą liczbę:&lt;/label&gt; &lt;input type=&quot;number&quot; id=&quot;a&quot;&gt;</font><br>");
+    document.write("<font color=green size=4>wytłumaczenie</font><br>");
+    document.write("<font color=red size=4>wykonanie numerycznego pola formularza z opisem 'Podaj pierwszą liczbę:'</font><br><br>");
+
+    document.write("<font color=green size=4>Druga linia teorii</font><br>");
+    document.write("<font color=red size=4>&lt;input type=&quot;button&quot; value=&quot;DODAWANIE&quot; onclick=&quot;suma()&quot;&gt;</font><br>");
+    document.write("<font color=green size=4>wytłumaczenie</font><br>");
+    document.write("<font color=red size=4>wykonanie przycisku uruchamiającego funkcję suma()</font><br><br>");
+
+    document.write("<font color=green size=4>Trzecia linia teorii</font><br>");
+    document.write("<font color=red size=4>var a = document.getElementById(&quot;a&quot;).value;</font><br>");
+    document.write("<font color=green size=4>wytłumaczenie</font><br>");
+    document.write("<font color=red size=4>wczytanie wartości z pola o id='a'</font><br><br>");
+
+    document.write("<font color=green size=4>Czwarta linia teorii</font><br>");
+    document.write("<font color=red size=4>if (a == &quot;&quot; || b == &quot;&quot;)</font><br>");
+    document.write("<font color=green size=4>wytłumaczenie</font><br>");
+    document.write("<font color=red size=4>sprawdzenie czy pola są puste</font><br><br>");
+
+    document.write("<font color=green size=4>Piąta linia teorii</font><br>");
+    document.write("<font color=red size=4>document.getElementById(&quot;wynik&quot;).innerHTML = ...</font><br>");
+    document.write("<font color=green size=4>wytłumaczenie</font><br>");
+    document.write("<font color=red size=4>wyświetlenie wyniku działania</font><br>");
+}
+
+</script>
+
+</body>
+</html>
+<!-- Dargacz Z41 -->
+</textarea>
+</body>
+</html>
