@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Programowanie obiektowe JS</title>
+
+<script type="text/javascript">
+function Klient(nazwisko_d, imie_d, zawod_d)
+{
+    this.nazwisko = nazwisko_d; 
+    this.imie = imie_d; 
+    this.zawod = zawod_d;  
+}
+
+Klient.prototype.wypisz = function()
+{
+    document.write(
+        this.nazwisko + " " +
+        this.imie + ", zawód: " +
+        this.zawod + "<br>"
+    );
+};
+
+var osoba1 = new Klient("Dargacz", "Mateusz", "Uczeń");
+var osoba2 = new Klient("Kowalewski", "Adam", "Bandyta");
+var osoba3 = new Klient("Siwek", "Borys", "Lekarz");
+
+document.write("<b>Dostęp do pól obiektów:</b><br>");
+document.write("klient pierwszy " + osoba1.nazwisko + " " + osoba1.imie + " " + osoba1.zawod + "<br>");
+document.write("klient drugi " + osoba2.nazwisko + " " + osoba2.imie + " " + osoba2.zawod + "<br>");
+document.write("klient trzeci " + osoba3.nazwisko + " " + osoba3.imie + " " + osoba3.zawod + "<br><br>");
+
+document.write("<b>Wyświetlanie danych metodą wypisz():</b><br>");
+osoba1.wypisz();
+osoba2.wypisz();
+osoba3.wypisz();
+</script>
+</head>
+
+<body>
+<br>
+</body>
+</html>
