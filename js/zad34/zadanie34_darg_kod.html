@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Dargacz Z34</title>
+    <style>
+    span#pyt {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .odp {
+        font-size: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 3px;
+    }
+</style>
+</head> 
+    <script>
+    function okno_zamknij_dar() { 
+        window.close() 
+    } 
+    </script>
+<body> 
+    <ol type="1">
+    <span id="pyt">1) Instrukcja wyboru -> składania teoretyczna</span><br>
+    <span class="odp">
+<textarea cols="60" rows="7">
+if (warunek_logiczny1) {
+    // instrukcje jeśli warunek_logiczny1 prawdziwy
+}
+if (warunek_logiczny2) {
+    // instrukcje jeśli warunek_logiczny2 prawdziwy
+}
+    </textarea></span><br><br><br>
+    
+    <span id="pyt">2) Instrukcja wyboru -> schemat blokowy</span><br>
+    <img src="instrukcja_wyboru.png"><br><br><br>
+
+    <span id="pyt">3) Instrukcja alternatywy -> składania teoretyczna</span><br>
+    <span class="odp">
+    <textarea cols="60" rows="7">
+if (warunek_logiczny){
+    // instrukcje jeśli warunek_logiczny prawdziwy
+}
+else {
+    // instrukcje jeśli warunek_logiczny fałszywy
+}
+    </textarea></span><br><br><br>
+
+
+    <span id="pyt">4) Instrukcja alternatywy -> schemat blokowy</span><br>
+    <img src="instrukcja_alternatywy.png"><br><br><br>
+
+
+    <span id="pyt">5) Operatory porównania</span><br>
+    <span class="odp">
+    <textarea cols="90" rows="7">
+==  jest równe   2==3   wynik -> fałsz
+!=  nie jest równe 2!=3 wynik -> prawda
+>   jest większe 25>3 wynik -> prawda
+<   jest mniejsze 2<3 wynik -> prawda
+>=  większe lub równe 25>=3 wynik -> prawda
+<=  mniejsze lub równe 2<=3 wynik -> prawda
+    </textarea></span><br><br><br>
+
+    <span id="pyt">6) Uwaga do operatorów porównania</span><br>
+    <span class="odp">
+        Należy odróżnić == ( dwa razy ) od = (jeden raz)<Br>
+        == ( dwa razy ) -> instrukcja PORÓWNANIA<br>
+        = (jeden raz) -> instrukcja PRZYPISANIA np. a=5;<br><br><br>
+
+
+    <span id="pyt">7) Operatory logiczne</span><br>
+    <textarea cols="90" rows="4">
+    && i x=3 y=4 (x < 9 && y > 2) wynik->prawda
+    || lub x=3 y=4 (x==8 || y==6) wynik->fałsz
+    ! zaprzeczenie x=3 y=4 !(x==y) wynik->prawda
+    </textarea></span><br><br><br>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_dar()"/>
+</body> 
+</html> 
+<!-- Dargacz Z34 -->
+ </textarea>
+</body>
+</html>
