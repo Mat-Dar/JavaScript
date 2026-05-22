@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <title>Dargacz Z53</title>
+</head>
+<body>
+
+<script>
+var ile_powtorzen = parseInt(prompt("ile razy powtórzyć=", "5"), 10);
+var inicjaly = prompt("podaj twoje inicjały=", "MK");
+
+if (isNaN(ile_powtorzen) || ile_powtorzen < 1) {
+    ile_powtorzen = 1;
+}
+
+
+document.write("<pre>");
+for (var i = 1; i <= ile_powtorzen; i++) {
+    for (var k = 1; k <= i; k++) {
+        document.write("&nbsp;&nbsp;");
+    }
+    document.write(i + "_" + inicjaly + "_" + i + "<br>");
+}
+document.write("</pre>");
+</script>
+
+</body>
+</html>
