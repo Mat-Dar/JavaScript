@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Dargacz Z49</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+        <script language="JavaScript"> //z49
+            do {
+                var a_dar=parseFloat(prompt("bok a=",""));
+                var b_dar=parseFloat(prompt("bok b=",""));
+                var c_dar=parseFloat(prompt("bok c=",""));
+                document.write("sprawdzam waruni dla trójkąta wczytanych danych" + "<br>");
+            } while (!((a_dar>0)&&(b_dar>0)&&(c_dar>0)&&(a_dar+b_dar>c_dar)&&(a_dar+c_dar>b_dar)&&(c_dar+b_dar>a_dar)));
+            document.write("wyrok: trojkat sie zamyka oraz boki sa dodatnie");
+        </script>
+    </div>
+</body>
+</html>
