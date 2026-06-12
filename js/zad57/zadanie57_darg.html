@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        do {
+            l1_t_dar = parseFloat(prompt("podaj liczbe z zakresu <20;60>",""));
+            l2_t_dar = parseFloat(prompt("podaj liczbe z zakresu <20;60>",""));
+        } while (60 < l1_t_dar || l1_t_dar < 20 || (60 < l2_t_dar || l2_t_dar < 20));
+
+        pocz_dar = parseInt(prompt("Podaj wartość początkową wielkości tekstu",""));
+        tekst_dar = prompt("podaj dowolny tekst","");
+
+        if (l1_t_dar < l2_t_dar){
+            for (var i=pocz_dar; i<=100; i+=5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_dar+"<br></p>");
+            }
+        } else if (l2_t_dar < l1_t_dar){
+            for (var i=pocz_dar; i>=0; i-=5){
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_dar+"<br></p>");;
+            }
+        } else if (l2_t_dar == l1_t_dar) {
+            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_dar+"<br></p>");
+        }
+
+        document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_dar+"<br></p>");
+    </script>
+</head>
+<body>
+</body>
+</html>

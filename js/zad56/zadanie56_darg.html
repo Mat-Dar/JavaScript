@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        var imie_dar = prompt("Podaj imię:");
+        var nazwisko_dar = prompt("Podaj nazwisko:");
+
+        var a_dar = (nazwisko_dar.length % 4) + 5;
+        var b_dar = (imie_dar.length % 6) + 20;
+
+        for (var j_dar = 1; j_dar <= b_dar; j_dar++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (var i_dar = 1; i_dar <= a_dar - 2; i_dar++) {
+            document.write("*");
+
+            for (var j_dar = 1; j_dar <= b_dar - 2; j_dar++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            document.write("*<br>");
+        }
+        for (var j_dar = 1; j_dar <= b_dar; j_dar++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
