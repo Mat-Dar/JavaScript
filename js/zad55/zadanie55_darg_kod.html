@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <textarea cols="120" rows="25">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+        var a_dar = parseInt(prompt("podaj a",""));
+        var b_dar = parseInt(prompt("podaj b",""));
+
+        for (var j_dar = 1; j_dar <= b_dar; j_dar++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        var wiersz_dar = "*";
+        for (var j_dar = 1; j_dar <= (b_dar - 2); j_dar++) {
+            wiersz_dar = wiersz_dar + "&nbsp;&nbsp;";
+        }
+        wiersz_dar = wiersz_dar + "*";
+
+        for (var i_dar = 1; i_dar <= (a_dar - 2); i_dar++) {
+            document.write(wiersz_dar + "<br>");
+        }
+
+        for (var j_dar = 1; j_dar <= b_dar; j_dar++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
+</textarea>
+</body>
+</html>
